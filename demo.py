@@ -11,7 +11,6 @@ import os
 from dotenv import load_dotenv,find_dotenv
 _ = load_dotenv(find_dotenv()) 
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 if 'prompts' not in st.session_state:
     st.session_state['prompts'] = [{"role": "system", "content": "You are a helpful assistant. Answer as concisely as possible with a little humor expression."}]
