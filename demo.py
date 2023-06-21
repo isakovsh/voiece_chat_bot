@@ -10,7 +10,7 @@ import openai
 import os
 from dotenv import load_dotenv,find_dotenv
 _ = load_dotenv(find_dotenv()) 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 if 'prompts' not in st.session_state:
